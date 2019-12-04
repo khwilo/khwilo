@@ -34,7 +34,7 @@
 }
 
 .modal {
-  /* display: none; */
+  display: none;
 }
 
 .modal-backdrop {
@@ -128,4 +128,28 @@
 #contact-details-content > a:hover {
   color: crimson;
   text-decoration: underline;
+}
+
+.contact-social-media > section {
+  margin-top: 0;
+}
+
+.contact-social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 10em;
+  padding: 0.5em;
+  font-size: 1.2em;
+}
+
+@media (min-width: 35em) {
+  .contact-social-media {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 48em) {
+  .contact-social-media {
+    font-size: 2em;
+  }
 }

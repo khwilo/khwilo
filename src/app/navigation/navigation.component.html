@@ -1,8 +1,8 @@
 <nav class="nav">
   <ul class="site-nav-links">
-    <li class="nav-left"><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/project">Projects</a></li>
+    <li class="nav-left"><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Projects</a></li>
     <li (click)="displayModal()"><a>Contact</a></li>
   </ul>
 </nav>
@@ -15,6 +15,23 @@
       <p id="contact-details-header">Get in touch</p>
       <div id="contact-details-content">
         <a href="mailto:{{ emailAddress }}">{{ emailAddress }}</a>
+      </div>
+      <div class="contact-social-media">
+        <section class="icons">
+          <fa-icon [icon]="GitHubIcon">
+            <a href="{{ GitHubLink }}"></a>
+          </fa-icon>
+        </section>
+        <section class="icons">
+          <fa-icon [icon]="LinkedinIcon">
+            <a href="{{ LinkedInLink }}"></a>
+          </fa-icon>
+        </section>
+        <section class="icons">
+          <fa-icon [icon]="TwitterIcon">
+            <a href="{{ TwitterLink }}"></a>
+          </fa-icon>
+        </section>
       </div>
     </div>
   </div>
