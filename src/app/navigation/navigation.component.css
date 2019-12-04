@@ -34,7 +34,7 @@
 }
 
 .modal {
-  display: none;
+  /* display: none; */
 }
 
 .modal-backdrop {
@@ -50,13 +50,25 @@
 .modal-body {
   position: fixed;
   top: 5em;
-  bottom: 5em;
+  bottom: 12em;
   right: 10%;
   left: 10%;
   padding: 2em 3em;
   background-color: #ffffff;
   overflow: auto;
   z-index: 2;
+}
+
+@media (min-width: 48em) {
+  .modal-body {
+    bottom: 5em;
+  }
+}
+
+@media (min-width: 35em) {
+  .modal-body {
+    bottom: 5em;
+  }
 }
 
 .modal-close {
@@ -80,4 +92,40 @@
   left: 0.22em;
   text-indent: 0;
   content: '\00D7';
+}
+
+.contact-details {
+  background-color: #f4f2f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 22em;
+}
+
+#contact-details-header {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+#contact-details-content {
+  margin-top: 0;
+}
+
+#contact-details-content > a {
+  font-weight: 700;
+  font-size: 1em;
+  color: #000000;
+  text-decoration: none;
+}
+
+@media (min-width: 48em) {
+  #contact-details-content > a {
+    font-size: 3em;
+  }
+}
+
+#contact-details-content > a:hover {
+  color: crimson;
+  text-decoration: underline;
 }

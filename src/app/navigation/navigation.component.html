@@ -12,8 +12,10 @@
   <div class="modal-body">
     <button class="modal-close" id="close" (click)="closeModal()">close</button>
     <div class="contact-details">
-      <p>Get in touch</p>
-      <p>{{ emailAddress }}</p>
+      <p id="contact-details-header">Get in touch</p>
+      <div id="contact-details-content">
+        <a href="mailto:{{ emailAddress }}">{{ emailAddress }}</a>
+      </div>
     </div>
   </div>
 </div>
