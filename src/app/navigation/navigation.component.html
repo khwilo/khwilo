@@ -1,0 +1,19 @@
+<nav class="nav">
+  <ul class="site-nav-links">
+    <li class="nav-left"><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/project">Projects</a></li>
+    <li (click)="displayModal()"><a>Contact</a></li>
+  </ul>
+</nav>
+
+<div class="modal" id="modal" #modal>
+  <div class="modal-backdrop"></div>
+  <div class="modal-body">
+    <button class="modal-close" id="close" (click)="closeModal()">close</button>
+    <div class="contact-details">
+      <p>Get in touch</p>
+      <p>{{ emailAddress }}</p>
+    </div>
+  </div>
+</div>

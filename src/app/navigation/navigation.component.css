@@ -1,0 +1,83 @@
+.site-nav-links {
+  list-style-type: none;
+  display: flex;
+  padding: 0.5em;
+  border-radius: 0.2em;
+}
+
+.site-nav-links > li {
+  margin-top: 0;
+  width: 7em;
+  text-align: center;
+}
+
+.site-nav-links > li > a:hover {
+  background-color: crimson;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.site-nav-links > li > a {
+  display: block;
+  padding: 0.5em 1em;
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #000000;
+}
+
+.site-nav-links > li + li {
+  margin-left: 1.5em;
+}
+
+.site-nav-links > .nav-left {
+  margin-right: auto;
+}
+
+.modal {
+  display: none;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal-body {
+  position: fixed;
+  top: 5em;
+  bottom: 5em;
+  right: 10%;
+  left: 10%;
+  padding: 2em 3em;
+  background-color: #ffffff;
+  overflow: auto;
+  z-index: 2;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.3em;
+  right: 0.3em;
+  cursor: pointer;
+  font-size: 2em;
+  height: 1em;
+  width: 1em;
+  text-indent: 10em;
+  overflow: hidden;
+  border: 0;
+  background-color: #ffffff;
+}
+
+.modal-close::after {
+  position: absolute;
+  line-height: 0.5;
+  top: 0.25em;
+  left: 0.22em;
+  text-indent: 0;
+  content: '\00D7';
+}
