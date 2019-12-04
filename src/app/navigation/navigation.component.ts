@@ -13,7 +13,7 @@ import {
 export class NavigationComponent implements OnInit {
   emailAddress = 'khwilowatai@gmail.com';
   GitHubLink = 'https://github.com/khwilo';
-  LinkedInLink = 'www.linkedin.com/in/khwilo-watai';
+  LinkedInLink = 'https://www.linkedin.com/in/khwilo-watai';
   TwitterLink = 'https://twitter.com/khwilo';
 
   GitHubIcon = faGithub;

@@ -142,6 +142,19 @@
   font-size: 1.2em;
 }
 
+.contact-social-media > section.icons > a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-social-media > section.icons.linkedIn > a {
+  color: #006db6;
+}
+
+.contact-social-media > section.icons.twitter > a {
+  color: #4ca2de;
+}
+
 @media (min-width: 35em) {
   .contact-social-media {
     font-size: 1.5em;
