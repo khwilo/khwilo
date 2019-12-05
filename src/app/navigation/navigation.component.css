@@ -151,6 +151,10 @@
   color: #006db6;
 }
 
+.contact-social-media > section.icons.whatsapp > a {
+  color: #00dc5d;
+}
+
 .contact-social-media > section.icons.twitter > a {
   color: #4ca2de;
 }
