@@ -12,6 +12,12 @@
   align-items: center;
 }
 
+#developer-name,
+#developer-description,
+#motto {
+  text-align: center;
+}
+
 #developer-name {
   font-weight: 700;
   font-size: var(--main-heading-font-size);
@@ -19,4 +25,13 @@
 
 #developer-description {
   font-size: var(--sub-heading-font-size);
+}
+
+#motto {
+  color: crimson;
+  font-size: var(--content-font-size);
+  font-weight: bold;
+  border: 4px solid crimson;
+  width: 50%;
+  margin: 2em auto 0 auto;
 }
