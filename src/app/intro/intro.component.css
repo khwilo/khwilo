@@ -1,0 +1,22 @@
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24em;
+}
+
+.app-container .introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#developer-name {
+  font-weight: 700;
+  font-size: var(--main-heading-font-size);
+}
+
+#developer-description {
+  font-size: var(--sub-heading-font-size);
+}
