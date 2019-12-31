@@ -1,0 +1,28 @@
+.projects-container {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1em;
+}
+
+.projects-container .project-info:nth-child(1) {
+  margin-top: 1.5em;
+}
+
+.project-info {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.project-info img {
+  width: 100%;
+}
+
+.project-info .project-title,
+.project-info .project-stack {
+  color: #ffffff;
+  font-weight: bold;
+}
