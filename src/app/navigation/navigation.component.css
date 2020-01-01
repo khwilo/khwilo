@@ -2,7 +2,9 @@
   list-style-type: none;
   display: flex;
   padding: 0.5em;
-  border-radius: 0.2em;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .site-nav-links > li {
@@ -11,26 +13,16 @@
   text-align: center;
 }
 
-.site-nav-links > li > a:hover {
-  background-color: crimson;
-  color: #ffffff;
-  font-weight: 500;
-}
-
 .site-nav-links > li > a {
   display: block;
-  padding: 0.5em 1em;
-  background-color: #ffffff;
+  padding: 0.5em;
   text-decoration: none;
-  color: #000000;
+  color: #000c;
+  font-weight: 400;
 }
 
-.site-nav-links > li + li {
-  margin-left: 1.5em;
-}
-
-.site-nav-links > .nav-left {
-  margin-right: auto;
+.site-nav-links > li > a:hover {
+  color: crimson;
 }
 
 .modal {
