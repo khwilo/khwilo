@@ -5,6 +5,7 @@
   justify-content: space-around;
   margin: 0 auto;
   width: 80%;
+  border-bottom: 1px solid crimson;
 }
 
 .site-nav-links > li {
