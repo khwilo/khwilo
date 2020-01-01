@@ -5,41 +5,5 @@
     </li>
     <li><a [routerLink]="['/about']">About</a></li>
     <li><a [routerLink]="['/projects']">Projects</a></li>
-    <li (click)="displayModal()"><a>Contact</a></li>
   </ul>
 </nav>
-
-<div class="modal" id="modal" #modal>
-  <div class="modal-backdrop"></div>
-  <div class="modal-body">
-    <button class="modal-close" id="close" (click)="closeModal()">close</button>
-    <div class="contact-details">
-      <p id="contact-details-header">Get in touch</p>
-      <div id="contact-details-content">
-        <a href="mailto:{{ emailAddress }}">{{ emailAddress }}</a>
-      </div>
-      <div class="contact-social-media">
-        <section class="icons">
-          <a href="{{ GitHubLink }}" target="_blank">
-            <fa-icon [icon]="GitHubIcon"></fa-icon>
-          </a>
-        </section>
-        <section class="icons linkedIn">
-          <a href="{{ LinkedInLink }}" target="_blank">
-            <fa-icon [icon]="LinkedinIcon"></fa-icon>
-          </a>
-        </section>
-        <section class="icons whatsapp">
-          <a href="{{ WhatsappLink }}" target="_blank">
-            <fa-icon [icon]="WhatsappIcon"></fa-icon>
-          </a>
-        </section>
-        <section class="icons twitter">
-          <a href="{{ TwitterLink }}" target="_blank">
-            <fa-icon [icon]="TwitterIcon"></fa-icon>
-          </a>
-        </section>
-      </div>
-    </div>
-  </div>
-</div>
