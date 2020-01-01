@@ -1,14 +1,43 @@
 <section class="about-container">
   <div class="about-info">
-    <p id="intro">
+    <section id="intro">
       I research, design, develop and implement software services on the web
       platform.
-    </p>
+    </section>
     <hr id="about__horizontal-line" />
-    <p id="outro">
-      <span id="title">TECH STACK:</span> HTML, CSS, JavaScript, Angular,
+    <section id="outro">
+      <span class="title">TECH STACK:</span> HTML, CSS, JavaScript, Angular,
       Typescript, NodeJS, Express, Postgresql, MongoDB
-    </p>
+    </section>
+    <hr id="about__horizontal-line" />
+    <p>GET IN TOUCH:</p>
+    <section class="contact-details">
+      <div id="contact-details-email">
+        <a href="mailto:{{ emailAddress }}">{{ emailAddress }}</a>
+      </div>
+      <div id="contact-social-media">
+        <section class="icons">
+          <a href="{{ GitHubLink }}" target="_blank">
+            <fa-icon [icon]="GitHubIcon"></fa-icon>
+          </a>
+        </section>
+        <section class="icons linkedIn">
+          <a href="{{ LinkedInLink }}" target="_blank">
+            <fa-icon [icon]="LinkedinIcon"></fa-icon>
+          </a>
+        </section>
+        <section class="icons whatsapp">
+          <a href="{{ WhatsappLink }}" target="_blank">
+            <fa-icon [icon]="WhatsappIcon"></fa-icon>
+          </a>
+        </section>
+        <section class="icons twitter">
+          <a href="{{ TwitterLink }}" target="_blank">
+            <fa-icon [icon]="TwitterIcon"></fa-icon>
+          </a>
+        </section>
+      </div>
+    </section>
   </div>
 
   <div class="about-profile-picture">

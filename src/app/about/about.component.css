@@ -11,7 +11,6 @@
   font-weight: bold;
   padding: 1em;
   font-size: 1em;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -23,13 +22,91 @@
 
 .about-info #about__horizontal-line {
   border-color: #ffffff;
-  width: 50%;
+  width: 100%;
   display: block;
 }
 
-.about-info #outro #title {
+section .title {
   border: 2px solid #fff;
   font-size: 1.2em;
+}
+
+section.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 35em) {
+  section.contact-details {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+#contact-details-email {
+  margin: 0 auto 1em auto;
+}
+
+#contact-details-email .title {
+  font-size: 1em;
+}
+
+#contact-details-email a {
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #fff;
+  color: crimson;
+  padding: 0.5em 1.4em;
+  display: flex;
+}
+
+@media (min-width: 35em) {
+  #contact-details-email {
+    display: flex;
+    height: 100%;
+    margin: 0;
+  }
+
+  #contact-details-email a {
+    display: flex;
+    align-items: center;
+  }
+}
+
+#contact-social-media {
+  display: flex;
+  padding: 0.5em;
+  font-size: 1.2em;
+  margin: 0 auto;
+}
+
+@media (min-width: 35em) {
+  #contact-social-media {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+#contact-social-media > .icons {
+  margin-top: 0;
+}
+
+#contact-social-media > section.icons > a {
+  text-decoration: none;
+  color: #000;
+  padding: 1em;
+}
+
+#contact-social-media > section.icons.linkedIn > a {
+  color: #006db6;
+}
+
+#contact-social-media > section.icons.whatsapp > a {
+  color: #00dc5d;
+}
+
+#contact-social-media > section.icons.twitter > a {
+  color: #4ca2de;
 }
 
 .about-profile-picture {
