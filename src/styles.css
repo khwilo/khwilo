@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Code:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:500,700|Lato:400,700&display=swap');
 
 :root {
   box-sizing: border-box;
@@ -22,8 +22,8 @@
 body {
   margin: 0;
   font-size: var(--content-font-size);
-  font-family: 'Fira Code', monospace;
-  background-color: #f4f2f0;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--bg-color);
   min-height: 100vh;
 }
 
