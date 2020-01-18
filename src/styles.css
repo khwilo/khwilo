@@ -7,10 +7,11 @@
   --content-font-size: 1em;
   --bg-color: hsl(345, 24%, 93%);
   --brand-color: hsl(183, 38%, 44%);
-  --text-color: hsl(0, 0%, 0%);
+  --black: hsl(0, 0%, 0%);
   --light-teal: hsl(183, 44%, 52%);
   --extra-light-teal: hsl(179, 90%, 47%);
   --red: hsl(345, 100%, 51%);
+  --white: hsl(0, 0%, 100%);
 }
 
 *,
@@ -24,7 +25,12 @@ body {
   font-size: var(--content-font-size);
   font-family: 'Lato', sans-serif;
   background-color: var(--bg-color);
+  color: var(--black);
   min-height: 100vh;
+  padding: 0.5em 1em;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body * + * {
