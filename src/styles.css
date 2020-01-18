@@ -5,6 +5,12 @@
   --main-heading-font-size: 2.5em;
   --sub-heading-font-size: 1.5em;
   --content-font-size: 1em;
+  --bg-color: hsl(345, 24%, 93%);
+  --brand-color: hsl(183, 38%, 44%);
+  --text-color: hsl(0, 0%, 0%);
+  --light-teal: hsl(183, 44%, 52%);
+  --extra-light-teal: hsl(179, 90%, 47%);
+  --red: hsl(345, 100%, 51%);
 }
 
 *,
