@@ -1,9 +1,35 @@
-<nav class="nav">
-  <ul class="site-nav-links">
-    <li class="nav-left">
-      <a [routerLink]="['/home']">Home</a>
-    </li>
-    <li><a [routerLink]="['/about']">About</a></li>
-    <li><a [routerLink]="['/projects']">Projects</a></li>
-  </ul>
-</nav>
+<header class="header">
+  <h1 class="logo" aria-label="Logo with full name initials">
+    KK
+  </h1>
+
+  <nav class="nav" #navigationMenu>
+    <div class="nav-inner">
+      <a
+        href="#intro"
+        class="menu-toggle menu-toggle--close"
+        aria-label="Close main menu"
+        (click)="closeMenu()"
+      >
+        <span class="sr-only">Close main menu</span>
+        <fa-icon [icon]="rightArrowIcon"></fa-icon>
+      </a>
+      <ul class="site-nav-links">
+        <li><a href="#about" (click)="closeMenu()">About</a></li>
+        <li><a href="#projects" (click)="closeMenu()">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="toggle-menu">
+    <button
+      id="main-menu-toggle"
+      class="menu-toggle menu-toggle--open"
+      aria-label="Open main menu"
+      (click)="openMenu()"
+    >
+      <span class="sr-only">Open main menu</span>
+      <fa-icon [icon]="barsIcon" class="barsIcon"></fa-icon>
+    </button>
+  </div>
+</header>
