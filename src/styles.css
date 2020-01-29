@@ -1,17 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:500,700|Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,700i|Pacifico&display=swap');
 
 :root {
   box-sizing: border-box;
-  --main-heading-font-size: 2.5em;
-  --sub-heading-font-size: 1.5em;
-  --content-font-size: 1em;
-  --bg-color: hsl(345, 24%, 93%);
-  --brand-color: hsl(183, 38%, 44%);
-  --black: hsl(0, 0%, 0%);
-  --light-teal: hsl(183, 44%, 52%);
-  --extra-light-teal: hsl(179, 90%, 47%);
-  --red: hsl(345, 100%, 51%);
-  --white: hsl(0, 0%, 100%);
+
+  font-size: calc(0.5em + 1vw);
+
+  --ff-logo: 'Pacifico', cursive;
+  --ff-content: 'Lato', sans-serif;
+
+  --fs-heading-1: 3em;
+  --fs-heading-2: 2em;
+  --fs-heading-3: 1.5em;
+  --fs-content: 1em;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fw-bold-italic: 700i;
+
+  --clr-dark: hsl(0, 0%, 0%);
+  --clr-light-gray: hsl(0, 0%, 26%);
+  --clr-dark-gray: hsl(0, 0%, 13%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-teal: hsl(173, 60%, 62%);
+  --clr-default-teal: hsl(174, 63%, 40%);
+  --clr-dark-teal: hsl(175, 100%, 23%);
+  --clr-dark-teal-compliment: hsl(355, 100%, 23%);
 }
 
 *,
@@ -22,21 +36,129 @@
 
 body {
   margin: 0;
-  font-size: var(--content-font-size);
-  font-family: 'Lato', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--black);
+  line-height: 1.5;
+  font-size: var(--fs-content);
+  font-family: var(--ff-content);
+  background-color: var(--clr-white);
+  color: var(--clr-dark);
   min-height: 100vh;
-  padding: 0.5em 1em;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 
-body * + * {
-  margin-top: 1.5em;
+*:focus {
+  outline: 2px solid var(--clr-light-teal);
 }
 
-p {
-  margin: 0;
+a {
+  color: var(--clr-dark);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--clr-dark-teal-compliment);
+}
+
+a:hover {
+  color: var(--clr-light-teal);
+}
+
+a:focus {
+  color: var(--clr-dark-teal);
+}
+
+.logo {
+  font-family: var(--ff-logo);
+}
+
+.logo__content {
+  font-size: var(--fs-heading-1);
+  color: var(--clr-dark-teal);
+}
+
+.menu-toggle {
+  color: var(--clr-dark-teal);
+}
+
+.section__title {
+  font-size: var(--fs-heading-2);
+}
+
+.section__sub-title {
+  font-size: var(--fs-heading-3);
+}
+
+.intro__name {
+  font-size: var(--fs-heading-2);
+}
+
+.intro__title {
+  font-size: var(--fs-heading-3);
+}
+
+.intro__contact-email,
+.intro__contact-address {
+  color: var(--clr-dark-gray);
+}
+
+.intro__social_media {
+  border: 2px solid var(--clr-dark-gray);
+  background-color: var(--clr-white);
+  padding: 0.5em;
+}
+
+.main__about,
+.main__projects {
+  background-color: var(--clr-light-gray);
+}
+
+.main__about {
+  color: var(--clr-white);
+}
+
+.main__services {
+  padding: 1em;
+}
+
+.services__front-end,
+.services__back-end {
+  box-shadow: 10px 10px 5px -5px var(--clr-light-gray);
+  border: 2px solid var(--clr-light-gray);
+}
+
+.main__projects {
+  padding: 1em;
+}
+
+.project__info {
+  background-color: var(--clr-default-teal);
+  color: var(--clr-white);
+}
+
+.project__description {
+  font-weight: var(--fw-light);
+}
+
+.project__link-icon {
+  background-color: var(--clr-dark-gray);
+  color: var(--clr-white);
+}
+
+.language-tag {
+  padding: 0 0.5em;
+  border-radius: 10px;
+  background-color: var(--clr-white);
+  color: var(--clr-dark-gray);
+  display: inline-flex;
+}
+
+.language-tag:hover {
+  font-weight: var(--fw-bold);
+}
+
+.language-tag + .language-tag {
+  margin-left: 0.5em;
+}
+
+.footer {
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
 }
