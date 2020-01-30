@@ -1,10 +1,18 @@
 import {
-  Component,
   AfterViewInit,
-  ViewChildren,
+  Component,
+  ElementRef,
   QueryList,
-  ElementRef
+  ViewChildren
 } from '@angular/core';
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+  faWhatsapp
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +21,22 @@ import {
 })
 export class AppComponent implements AfterViewInit {
   title = 'khwilo';
+  name = 'Khwilo Kabaka';
+  profession = 'Mobile Web Application Developer';
+  emailAddress = 'khwilowatai@gmail.com';
+  location = 'Nairobi, Kenya';
+  GitHubLink = 'https://github.com/khwilo';
+  LinkedInLink = 'https://www.linkedin.com/in/khwilo-watai';
+  TwitterLink = 'https://twitter.com/khwilo';
+  WhatsappLink = 'https://api.whatsapp.com/send?phone=+254718802061';
+
+  LinkedInIcon = faLinkedin;
+  GitHubIcon = faGithub;
+  WhatsappIcon = faWhatsapp;
+  TwitterIcon = faTwitter;
+
+  envelopeIcon = faEnvelope;
+  mapMarkerIcon = faMapMarker;
 
   @ViewChildren('nav_link') navigationLinks: QueryList<ElementRef>;
 

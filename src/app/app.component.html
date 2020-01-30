@@ -41,22 +41,52 @@
     <section class="main__intro" id="intro">
       <h2 class="section__title">Intro</h2>
       <div class="intro__name-title">
-        <p class="intro__name">Khwilo Kabaka</p>
-        <p class="intro__title">Mobile Web Application Developer</p>
+        <p class="intro__name">Hi, I am {{ name }}</p>
+        <p class="intro__title">{{ profession }}</p>
       </div>
       <div class="intro__contact">
         <p class="intro__contact-email">
-          <span class="email-icon">Email</span> khwilowatai@gmail.com
+          <span class="email-icon">
+            <fa-icon [icon]="envelopeIcon"></fa-icon>
+          </span>
+          &nbsp;<a href="mailto:{{ emailAddress }}">{{ emailAddress }}</a>
         </p>
         <p class="intro__contact-address">
-          <span class="location-icon">Location</span> Nairobi, Kenya
+          <span class="location-icon">
+            <fa-icon [icon]="mapMarkerIcon"></fa-icon>
+          </span>
+          &nbsp;{{ location }}
         </p>
       </div>
       <div class="intro__social_media social-media">
-        <div class="social-media__icon">LinkedIn</div>
-        <div class="social-media__icon">GitHub</div>
-        <div class="social-media__icon">WhatsApp</div>
-        <div class="social-media__icon">Twitter</div>
+        <div class="social-media__icon">
+          <a
+            href="{{ LinkedInLink }}"
+            target="_blank"
+            aria-label="LinkedIn Icon"
+          >
+            <fa-icon [icon]="LinkedInIcon" class="linkedIn-icon"></fa-icon>
+          </a>
+        </div>
+        <div class="social-media__icon">
+          <a href="{{ GitHubLink }}" target="_blank" aria-label="GitHub Icon">
+            <fa-icon [icon]="GitHubIcon" class="github-icon"></fa-icon>
+          </a>
+        </div>
+        <div class="social-media__icon">
+          <a
+            href="{{ WhatsappLink }}"
+            target="_blank"
+            aria-label="Whatsapp Icon"
+          >
+            <fa-icon [icon]="WhatsappIcon" class="whatsapp-icon"></fa-icon>
+          </a>
+        </div>
+        <div class="social-media__icon">
+          <a href="{{ TwitterLink }}" target="_blank" aria-label="Twitter Icon">
+            <fa-icon [icon]="TwitterIcon" class="twitter-icon"></fa-icon>
+          </a>
+        </div>
       </div>
     </section>
     <!-- Introduction section -->
@@ -64,11 +94,10 @@
     <section class="main__about" id="about">
       <h2 class="section__title">About</h2>
       <p>
-        Hi, my name is Khwilo Kabaka. I am a software by profession with an
-        expertise in the field of web application development. My workflow
-        consists of researching, designing, developing and implementing software
-        services and tools that enhances and utilizes the capabilities of the
-        web.
+        Software developer with an expertise in the field of web application
+        development. My workflow consists of researching, designing, developing
+        and implementing software services and tools that enhances and utilizes
+        the capabilities of the web.
       </p>
     </section>
     <!-- About section -->
@@ -197,10 +226,34 @@
   <footer class="footer">
     <section class="contact" id="contact">
       <div class="footer__social_media social-media">
-        <div class="social-media__icon">LinkedIn</div>
-        <div class="social-media__icon">GitHub</div>
-        <div class="social-media__icon">WhatsApp</div>
-        <div class="social-media__icon">Twitter</div>
+        <div class="social-media__icon">
+          <a
+            href="{{ LinkedInLink }}"
+            target="_blank"
+            aria-label="LinkedIn Icon"
+          >
+            <fa-icon [icon]="LinkedInIcon" class="linkedIn-icon"></fa-icon>
+          </a>
+        </div>
+        <div class="social-media__icon">
+          <a href="{{ GitHubLink }}" target="_blank" aria-label="GitHub Icon">
+            <fa-icon [icon]="GitHubIcon" class="github-icon"></fa-icon>
+          </a>
+        </div>
+        <div class="social-media__icon">
+          <a
+            href="{{ WhatsappLink }}"
+            target="_blank"
+            aria-label="Whatsapp Icon"
+          >
+            <fa-icon [icon]="WhatsappIcon" class="whatsapp-icon"></fa-icon>
+          </a>
+        </div>
+        <div class="social-media__icon">
+          <a href="{{ TwitterLink }}" target="_blank" aria-label="Twitter Icon">
+            <fa-icon [icon]="TwitterIcon" class="twitter-icon"></fa-icon>
+          </a>
+        </div>
       </div>
       <div class="copyright">&copy; 2020</div>
     </section>
