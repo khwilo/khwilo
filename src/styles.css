@@ -223,12 +223,14 @@ a:focus {
   font-size: var(--fs-heading-3);
 }
 
-.main__intro > * + * {
-  margin-top: 1em;
+.main__intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main__intro .section__title {
-  margin-top: 0;
+.main__intro > * + * {
+  margin-top: 1em;
 }
 
 .intro__name {
@@ -240,10 +242,6 @@ a:focus {
   font-style: italic;
   color: var(--clr-dark-teal-compliment);
 }
-
-/* .intro__contact {
-  margin: 1em 0;
-} */
 
 .intro__contact-email,
 .intro__contact-address {
@@ -285,8 +283,7 @@ a:focus {
 
 .intro__social_media {
   display: inline-flex;
-  padding: 0.5em 0.5em 0.5em 0;
-  /* margin: 1em 0; */
+  padding: 0.5em;
 }
 
 .main__about,
