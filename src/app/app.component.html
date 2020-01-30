@@ -5,26 +5,30 @@
     </div>
     <!-- Logo -->
 
-    <button class="menu-toggle" aria-label="Menu toggle button">
+    <button
+      class="menu-toggle"
+      aria-label="Menu toggle button"
+      (click)="openMenu()"
+    >
       <span class="hamburger-menu"></span>
     </button>
     <!-- Toggle menu button -->
 
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item">
+        <li class="nav__item" #list_item>
           <a href="#about" class="nav__link">About</a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item" #list_item>
           <a href="#services" class="nav__link">Services</a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item" #list_item>
           <a href="#projects" class="nav__link">Projects</a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item" #list_item>
           <a href="#posts" class="nav__link">My Posts</a>
         </li>
-        <li class="nav__item">
+        <li class="nav__item" #list_item>
           <a href="#contact" class="nav__link">Contact</a>
         </li>
       </ul>

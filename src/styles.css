@@ -98,6 +98,10 @@ a:focus {
   z-index: 2;
 }
 
+.nav-open .menu-toggle {
+  position: fixed;
+}
+
 .hamburger-menu {
   display: block;
   position: relative;
@@ -129,6 +133,23 @@ a:focus {
   width: 2.5em;
 }
 
+.nav-open .hamburger-menu,
+.nav-open .hamburger-menu::before {
+  width: 2.5em;
+}
+
+.nav-open .hamburger-menu {
+  transform: rotate(45deg);
+}
+
+.nav-open .hamburger-menu::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger-menu::after {
+  opacity: 0;
+}
+
 .nav {
   position: fixed;
   top: 0;
@@ -138,6 +159,10 @@ a:focus {
   z-index: 1;
   background-color: var(--clr-dark-gray);
   transform: translateX(100%);
+}
+
+.nav-open .nav {
+  transform: translate(0);
 }
 
 .nav__list {
