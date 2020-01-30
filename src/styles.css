@@ -76,10 +76,14 @@ a:focus {
   color: var(--clr-default-teal);
 }
 
+.header,
+.main__intro {
+  padding: 1em;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
 }
 
 .logo {
@@ -189,8 +193,24 @@ a:focus {
   font-size: var(--fs-heading-3);
 }
 
+.main__intro,
+.main__about,
+.main__projects,
+.main__services,
+.main__posts {
+  display: flex;
+  flex-direction: column;
+}
+
 .section__title {
   font-size: var(--fs-heading-2);
+  background-color: var(--clr-default-teal);
+  padding: 0.1em 1em;
+  margin: 1em auto;
+  width: 5em;
+  color: var(--clr-white);
+  display: inline-flex;
+  justify-content: center;
 }
 
 .section__sub-title {
