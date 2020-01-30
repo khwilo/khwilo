@@ -14,14 +14,14 @@ import {
 export class AppComponent implements AfterViewInit {
   title = 'khwilo';
 
-  @ViewChildren('list_item') listItems: QueryList<ElementRef>;
+  @ViewChildren('nav_link') navigationLinks: QueryList<ElementRef>;
 
   openMenu() {
     document.body.classList.toggle('nav-open');
   }
 
   ngAfterViewInit() {
-    this.listItems.forEach((list) => {
+    this.navigationLinks.forEach((list) => {
       (list.nativeElement as HTMLElement).addEventListener('click', () => {
         document.body.classList.remove('nav-open');
       });
