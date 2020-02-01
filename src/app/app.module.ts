@@ -9,7 +9,6 @@ import { IntroComponent } from './intro/intro.component';
 import { MyPostsComponent } from './my-posts/my-posts.component';
 import { MyServicesComponent } from './my-services/my-services.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { NotFoundComponent } from './not-found/not-found.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
@@ -17,7 +16,6 @@ import { ProjectsComponent } from './projects/projects.component';
     AppComponent,
     NavigationComponent,
     ProjectsComponent,
-    NotFoundComponent,
     IntroComponent,
     AboutComponent,
     MyServicesComponent,
