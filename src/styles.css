@@ -248,26 +248,6 @@ a:focus {
 
 /* End - common styles for both about and projects sections */
 
-.main__posts {
-  padding: 1em;
-}
-
-.post__link {
-  color: var(--clr-light-gray);
-}
-
-.post__link:visited {
-  color: var(--clr-dark-teal-compliment);
-}
-
-.post__link:hover {
-  color: var(--clr-dark-teal);
-}
-
-.post__publish-date {
-  font-style: italic;
-}
-
 .footer {
   background-color: var(--clr-dark);
   color: var(--clr-white);
