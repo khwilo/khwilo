@@ -225,10 +225,6 @@ a:focus {
   color: var(--clr-github);
 }
 
-.footer__social_media .github-icon {
-  color: var(--clr-white);
-}
-
 .whatsapp-icon {
   color: var(--clr-whatsapp);
 }
@@ -247,15 +243,3 @@ a:focus {
 }
 
 /* End - common styles for both about and projects sections */
-
-.footer {
-  background-color: var(--clr-dark);
-  color: var(--clr-white);
-}
-
-.footer__contact {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding: 1em;
-}

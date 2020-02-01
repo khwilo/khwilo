@@ -4,6 +4,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AboutComponent } from './about/about.component';
 import { AppComponent } from './app.component';
+import { FooterComponent } from './footer/footer.component';
 import { IntroComponent } from './intro/intro.component';
 import { MyPostsComponent } from './my-posts/my-posts.component';
 import { MyServicesComponent } from './my-services/my-services.component';
@@ -20,7 +21,8 @@ import { ProjectsComponent } from './projects/projects.component';
     IntroComponent,
     AboutComponent,
     MyServicesComponent,
-    MyPostsComponent
+    MyPostsComponent,
+    FooterComponent
   ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],
