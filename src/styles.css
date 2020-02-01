@@ -466,3 +466,10 @@ a:focus {
   background-color: var(--clr-dark);
   color: var(--clr-white);
 }
+
+.footer__contact {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 1em;
+}
