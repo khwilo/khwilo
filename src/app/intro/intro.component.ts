@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 import {
-  faAngular,
-  faCss3,
-  faHtml5,
-  faJs,
-  faNodeJs
+  faGithub,
+  faLinkedin,
+  faTwitter,
+  faWhatsapp
 } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-intro',
@@ -14,11 +15,22 @@ import {
   styleUrls: ['./intro.component.css']
 })
 export class IntroComponent implements OnInit {
-  HTMLIcon = faHtml5;
-  CSS3Icon = faCss3;
-  JSIcon = faJs;
-  Angular = faAngular;
-  NodeJS = faNodeJs;
+  name = 'Khwilo Kabaka';
+  profession = 'Mobile Web Application Developer';
+  emailAddress = 'khwilowatai@gmail.com';
+  location = 'Nairobi, Kenya';
+  GitHubLink = 'https://github.com/khwilo';
+  LinkedInLink = 'https://www.linkedin.com/in/khwilo-watai';
+  TwitterLink = 'https://twitter.com/khwilo';
+  WhatsappLink = 'https://api.whatsapp.com/send?phone=+254718802061';
+
+  envelopeIcon = faEnvelope;
+  mapMarkerIcon = faMapMarker;
+
+  LinkedInIcon = faLinkedin;
+  GitHubIcon = faGithub;
+  WhatsappIcon = faWhatsapp;
+  TwitterIcon = faTwitter;
 
   constructor() {}
 

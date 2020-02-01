@@ -1,56 +1,30 @@
-.intro-container {
+.main__intro {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 34em;
+  padding: 1em;
 }
 
-.app-container .introduction {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.main__intro > * + * {
+  margin-top: 1em;
 }
 
-#developer-name,
-#developer-description,
-#motto {
-  text-align: center;
+.intro__name {
+  font-size: var(--fs-heading-2);
 }
 
-#developer-name {
-  font-weight: 700;
-  font-size: var(--main-heading-font-size);
+.intro__title {
+  font-size: var(--fs-heading-3);
+  font-style: italic;
+  color: var(--clr-dark-teal-compliment);
 }
 
-#developer-description {
-  font-size: var(--sub-heading-font-size);
+.intro__contact-email,
+.intro__contact-address {
+  color: var(--clr-dark-gray);
+  font-weight: var(--fw-light);
 }
 
-#motto {
-  color: crimson;
-  font-size: var(--content-font-size);
-  font-weight: bold;
-  border: 4px solid crimson;
-  width: 50%;
-  margin: 2em auto 0 auto;
-}
-
-.intro-container .skills-icons {
-  font-size: 2em;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.skills-icons .icon {
-  margin: 0;
+.intro__social_media {
   padding: 0.5em;
-}
-
-@media (min-width: 50em) {
-  .intro-container .skills-icons {
-    width: 60%;
-  }
 }

@@ -11,11 +11,9 @@ import {
   faTwitter,
   faWhatsapp
 } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import {
   faDatabase,
   faExternalLinkAlt,
-  faMapMarker,
   faPen
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -26,10 +24,7 @@ import {
 })
 export class AppComponent {
   title = 'khwilo';
-  name = 'Khwilo Kabaka';
-  profession = 'Mobile Web Application Developer';
-  emailAddress = 'khwilowatai@gmail.com';
-  location = 'Nairobi, Kenya';
+
   GitHubLink = 'https://github.com/khwilo';
   LinkedInLink = 'https://www.linkedin.com/in/khwilo-watai';
   TwitterLink = 'https://twitter.com/khwilo';
@@ -45,8 +40,6 @@ export class AppComponent {
   AngularIcon = faAngular;
   NodeJSIcon = faNodeJs;
 
-  envelopeIcon = faEnvelope;
-  mapMarkerIcon = faMapMarker;
   databaseIcon = faDatabase;
   externalLinkIcon = faExternalLinkAlt;
   penIcon = faPen;

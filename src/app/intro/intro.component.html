@@ -1,38 +1,42 @@
-<div class="intro-container" id="intro">
-  <section class="introduction">
-    <p id="developer-name">Hi, I'm Khwilo Kabaka</p>
-    <p id="developer-description">
-      I am a software engineer by profession. Let's work together.
-    </p>
-    <p id="motto">
-      Design, develop and launch
-    </p>
-  </section>
-  <div class="skills-icons">
-    <fa-icon
-      [icon]="HTMLIcon"
-      class="icon"
-      [ngStyle]="{ backgroundColor: '#FC5219' }"
-    ></fa-icon>
-    <fa-icon
-      [icon]="CSS3Icon"
-      class="icon"
-      [ngStyle]="{ backgroundColor: '#00A7F9' }"
-    ></fa-icon>
-    <fa-icon
-      [icon]="JSIcon"
-      class="icon"
-      [ngStyle]="{ backgroundColor: '#F2EB00' }"
-    ></fa-icon>
-    <fa-icon
-      [icon]="Angular"
-      class="icon"
-      [ngStyle]="{ backgroundColor: '#F20027' }"
-    ></fa-icon>
-    <fa-icon
-      [icon]="NodeJS"
-      class="icon"
-      [ngStyle]="{ backgroundColor: '#00923E' }"
-    ></fa-icon>
+<section class="main__intro section__wrapper" id="intro">
+  <div class="intro__name-title">
+    <p class="intro__name">Hi, I am {{ name }}</p>
+    <p class="intro__title">{{ profession }}</p>
   </div>
-</div>
+  <div class="intro__contact">
+    <p class="intro__contact-email">
+      <span class="email-icon">
+        <fa-icon [icon]="envelopeIcon"></fa-icon>
+      </span>
+      &nbsp;<a href="mailto:{{ emailAddress }}">{{ emailAddress }}</a>
+    </p>
+    <p class="intro__contact-address">
+      <span class="location-icon">
+        <fa-icon [icon]="mapMarkerIcon"></fa-icon>
+      </span>
+      &nbsp;{{ location }}
+    </p>
+  </div>
+  <div class="intro__social_media social-media">
+    <div class="social-media__icon">
+      <a href="{{ LinkedInLink }}" target="_blank" aria-label="LinkedIn Icon">
+        <fa-icon [icon]="LinkedInIcon" class="linkedIn-icon"></fa-icon>
+      </a>
+    </div>
+    <div class="social-media__icon">
+      <a href="{{ GitHubLink }}" target="_blank" aria-label="GitHub Icon">
+        <fa-icon [icon]="GitHubIcon" class="github-icon"></fa-icon>
+      </a>
+    </div>
+    <div class="social-media__icon">
+      <a href="{{ WhatsappLink }}" target="_blank" aria-label="Whatsapp Icon">
+        <fa-icon [icon]="WhatsappIcon" class="whatsapp-icon"></fa-icon>
+      </a>
+    </div>
+    <div class="social-media__icon">
+      <a href="{{ TwitterLink }}" target="_blank" aria-label="Twitter Icon">
+        <fa-icon [icon]="TwitterIcon" class="twitter-icon"></fa-icon>
+      </a>
+    </div>
+  </div>
+</section>

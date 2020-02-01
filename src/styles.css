@@ -171,10 +171,7 @@ a:focus {
 
 /* End - Navigation drawer styling */
 
-.main__intro {
-  padding: 1em;
-}
-
+/* Start - Common styles for intro, about, projects, services and posts sections */
 .main__intro,
 .main__about,
 .main__projects,
@@ -184,6 +181,9 @@ a:focus {
   flex-direction: column;
 }
 
+/* End - Common styles for intro, about, projects, services and posts sections */
+
+/* Start - Common styles for section title and section sub-title */
 .section__title {
   font-size: var(--fs-heading-2);
   color: var(--clr-default-teal);
@@ -198,32 +198,9 @@ a:focus {
   font-size: var(--fs-heading-3);
 }
 
-.main__intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* End - Common styles for section title and section sub-title */
 
-.main__intro > * + * {
-  margin-top: 1em;
-}
-
-.intro__name {
-  font-size: var(--fs-heading-2);
-}
-
-.intro__title {
-  font-size: var(--fs-heading-3);
-  font-style: italic;
-  color: var(--clr-dark-teal-compliment);
-}
-
-.intro__contact-email,
-.intro__contact-address {
-  color: var(--clr-dark-gray);
-  font-weight: var(--fw-light);
-}
-
+/* Start - Social media styles */
 .social-media {
   display: flex;
 }
@@ -257,10 +234,7 @@ a:focus {
   color: var(--clr-twitter);
 }
 
-.intro__social_media {
-  display: inline-flex;
-  padding: 0.5em;
-}
+/* End - Social media styles */
 
 .main__about,
 .main__projects {
