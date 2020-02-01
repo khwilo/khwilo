@@ -21,6 +21,11 @@
   justify-content: space-between;
 }
 
+.project__title .section__sub-title {
+  color: var(--clr-dark);
+  text-decoration: underline;
+}
+
 .project__link-icon {
   color: var(--clr-white);
   padding: 0.5em;
@@ -39,7 +44,7 @@
 }
 
 .project__description {
-  font-weight: var(--fw-light);
+  color: var(--clr-dark);
   margin: 0.5em 0 1em 0;
 }
 
