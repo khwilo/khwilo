@@ -1,38 +1,164 @@
-<div class="projects-container" id="projects">
-  <section
-    class="project-info"
-    [ngStyle]="{ backgroundColor: '#2E689E' }"
-    (click)="openSite('https://q-questioner-api.herokuapp.com/apidocs/')"
-  >
-    <header class="project-title">Questioner - API</header>
-    <img src="/assets/img/questioner-api.png" alt="" />
-    <footer class="project-stack">Python, Flask</footer>
-  </section>
-  <section
-    class="project-info"
-    [ngStyle]="{ backgroundColor: '#FF6C00' }"
-    (click)="openSite('https://khwilo.github.io/questioner/UI/index.html')"
-  >
-    <header class="project-title">Questioner - UI</header>
-    <img src="/assets/img/questioner-ui.png" alt="" />
-    <footer class="project-stack">HTML, CSS, Vanilla JS</footer>
-  </section>
-  <section
-    class="project-info"
-    [ngStyle]="{ backgroundColor: '#14121A' }"
-    (click)="openSite('https://countries-info.netlify.com/')"
-  >
-    <header class="project-title">Where in the World?</header>
-    <img src="/assets/img/where-in-the-world.png" alt="" />
-    <footer class="project-stack">HTML, CSS, JS, Angular</footer>
-  </section>
-  <section
-    class="project-info"
-    [ngStyle]="{ backgroundColor: '#1D2E33' }"
-    (click)="openSite('https://chill-room.netlify.com/')"
-  >
-    <header class="project-title">ChillRoom</header>
-    <img src="/assets/img/chill-room.png" alt="" />
-    <footer class="project-stack">HTML, CSS, JS, Angular</footer>
-  </section>
-</div>
+<section class="main__projects section__wrapper" id="projects">
+  <h2 class="section__title">Projects</h2>
+  <div class="main__projects-content">
+    <div class="project__info">
+      <div class="project__title">
+        <h3 class="section__sub-title">CountriesInfo</h3>
+        <div class="project__links">
+          <span class="project__link-icon">
+            <a
+              href="https://github.com/khwilo/countries-info"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="GitHub icon"
+            >
+              <fa-icon [icon]="GitHubIcon"></fa-icon>
+            </a>
+          </span>
+          <span class="project__link-icon">
+            <a
+              href="https://countries-info.netlify.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="External link icon"
+            >
+              <fa-icon [icon]="externalLinkIcon"></fa-icon>
+            </a>
+          </span>
+        </div>
+      </div>
+      <div class="project__description">
+        <p>
+          Countries display web application. Visual representation about a
+          country's flag, population, region and its capital.
+        </p>
+      </div>
+      <div class="project__language-tags">
+        <span class="language-tag">#HTML</span>
+        <span class="language-tag">#CSS</span>
+        <span class="language-tag">#JS</span>
+        <span class="language-tag">#Angular</span>
+      </div>
+    </div>
+
+    <div class="project__info">
+      <div class="project__title">
+        <h3 class="section__sub-title">ChillRoom</h3>
+        <div class="project__links">
+          <span class="project__link-icon">
+            <a
+              href="https://github.com/khwilo/chill-room"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="GitHub icon"
+            >
+              <fa-icon [icon]="GitHubIcon"></fa-icon>
+            </a>
+          </span>
+          <span class="project__link-icon">
+            <a
+              href="https://chill-room.netlify.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="External link icon"
+            >
+              <fa-icon [icon]="externalLinkIcon"></fa-icon>
+            </a>
+          </span>
+        </div>
+      </div>
+      <div class="project__description">
+        <p>
+          Movies listing web application. This web application displays
+          information about a particular movie name, genre, year of release,
+          duration and cast members.
+        </p>
+      </div>
+      <div class="project__language-tags">
+        <span class="language-tag">#HTML</span>
+        <span class="language-tag">#CSS</span>
+        <span class="language-tag">#JS</span>
+        <span class="language-tag">#Angular</span>
+      </div>
+    </div>
+
+    <div class="project__info">
+      <div class="project__title">
+        <h3 class="section__sub-title">Questioner API</h3>
+        <div class="project__links">
+          <span class="project__link-icon">
+            <a
+              href="https://github.com/khwilo/questioner-api"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="GitHub icon"
+            >
+              <fa-icon [icon]="GitHubIcon"></fa-icon>
+            </a>
+          </span>
+          <span class="project__link-icon">
+            <a
+              href="https://q-questioner-api.herokuapp.com/apidocs/"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="External link icon"
+            >
+              <fa-icon [icon]="externalLinkIcon"></fa-icon>
+            </a>
+          </span>
+        </div>
+      </div>
+      <div class="project__description">
+        <p>
+          REST API endpoints for the the Questioner website (A website that
+          collects questions to be asked in meetup scenarios).
+        </p>
+      </div>
+      <div class="project__language-tags">
+        <span class="language-tag">#Python</span>
+        <span class="language-tag">#Flask</span>
+      </div>
+    </div>
+
+    <div class="project__info">
+      <div class="project__title">
+        <h3 class="section__sub-title">Questioner UI</h3>
+        <div class="project__links">
+          <span class="project__link-icon">
+            <a
+              href="https://github.com/khwilo/questioner"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="GitHub icon"
+            >
+              <fa-icon [icon]="GitHubIcon"></fa-icon>
+            </a>
+          </span>
+          <span class="project__link-icon">
+            <a
+              href="https://khwilo.github.io/questioner/UI/index.html"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="External link icon"
+            >
+              <fa-icon [icon]="externalLinkIcon"></fa-icon>
+            </a>
+          </span>
+        </div>
+      </div>
+      <div class="project__description">
+        <p>
+          User interface for the Questioner website. This website collects
+          questions that users for a particular meetup expect to be addressed
+          before going to the meetup. Users have the ability to up-vote or
+          down-vote on any question that has been asked.
+        </p>
+      </div>
+      <div class="project__language-tags">
+        <span class="language-tag">#HTML</span>
+        <span class="language-tag">#CSS</span>
+        <span class="language-tag">#JS</span>
+      </div>
+    </div>
+  </div>
+</section>

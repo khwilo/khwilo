@@ -6,7 +6,7 @@ import {
   faTwitter,
   faWhatsapp
 } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLinkAlt, faPen } from '@fortawesome/free-solid-svg-icons';
+import { faPen } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -26,6 +26,5 @@ export class AppComponent {
   WhatsappIcon = faWhatsapp;
   TwitterIcon = faTwitter;
 
-  externalLinkIcon = faExternalLinkAlt;
   penIcon = faPen;
 }
