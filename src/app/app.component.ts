@@ -1,10 +1,5 @@
-import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  QueryList,
-  ViewChildren
-} from '@angular/core';
+import { Component } from '@angular/core';
+
 import {
   faAngular,
   faCss3,
@@ -29,7 +24,7 @@ import {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent {
   title = 'khwilo';
   name = 'Khwilo Kabaka';
   profession = 'Mobile Web Application Developer';
@@ -55,18 +50,4 @@ export class AppComponent implements AfterViewInit {
   databaseIcon = faDatabase;
   externalLinkIcon = faExternalLinkAlt;
   penIcon = faPen;
-
-  @ViewChildren('nav_link') navigationLinks: QueryList<ElementRef>;
-
-  openMenu() {
-    document.body.classList.toggle('nav-open');
-  }
-
-  ngAfterViewInit() {
-    this.navigationLinks.forEach((list) => {
-      (list.nativeElement as HTMLElement).addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
-      });
-    });
-  }
 }

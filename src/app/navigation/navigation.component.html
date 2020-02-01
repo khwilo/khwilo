@@ -1,35 +1,37 @@
 <header class="header">
-  <h1 class="logo" aria-label="Logo with full name initials">
-    KK
-  </h1>
-
-  <nav class="nav" #navigationMenu>
-    <div class="nav-inner">
-      <a
-        href="#intro"
-        class="menu-toggle menu-toggle--close"
-        aria-label="Close main menu"
-        (click)="closeMenu()"
-      >
-        <span class="sr-only">Close main menu</span>
-        <fa-icon [icon]="rightArrowIcon"></fa-icon>
-      </a>
-      <ul class="site-nav-links">
-        <li><a href="#about" (click)="closeMenu()">About</a></li>
-        <li><a href="#projects" (click)="closeMenu()">Projects</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="toggle-menu">
-    <button
-      id="main-menu-toggle"
-      class="menu-toggle menu-toggle--open"
-      aria-label="Open main menu"
-      (click)="openMenu()"
-    >
-      <span class="sr-only">Open main menu</span>
-      <fa-icon [icon]="barsIcon" class="barsIcon"></fa-icon>
-    </button>
+  <div class="logo">
+    <h1 class="logo__content">{{ logoName }}</h1>
   </div>
+  <!-- Logo -->
+
+  <button
+    class="menu-toggle"
+    aria-label="Menu toggle button"
+    (click)="openMenu()"
+  >
+    <span class="hamburger-menu"></span>
+  </button>
+  <!-- Toggle menu button -->
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#about" class="nav__link" #nav_link>About</a>
+      </li>
+      <li class="nav__item">
+        <a href="#services" class="nav__link" #nav_link>Services</a>
+      </li>
+      <li class="nav__item">
+        <a href="#projects" class="nav__link" #nav_link>Projects</a>
+      </li>
+      <li class="nav__item">
+        <a href="#posts" class="nav__link" #nav_link>My Posts</a>
+      </li>
+      <li class="nav__item">
+        <a href="#contact" class="nav__link" #nav_link>Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Navigation menu -->
 </header>
+<!-- Header section-->
