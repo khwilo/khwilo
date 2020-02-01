@@ -38,7 +38,7 @@
   <!-- Header section-->
 
   <main class="main">
-    <section class="main__intro" id="intro">
+    <section class="main__intro section__wrapper" id="intro">
       <div class="intro__name-title">
         <p class="intro__name">Hi, I am {{ name }}</p>
         <p class="intro__title">{{ profession }}</p>
@@ -90,18 +90,20 @@
     </section>
     <!-- Introduction section -->
 
-    <section class="main__about" id="about">
+    <section class="main__about section__wrapper" id="about">
       <h2 class="section__title">About</h2>
-      <p>
-        Software developer with an expertise in the field of web application
-        development. My workflow consists of researching, designing, developing
-        and implementing software services and tools that enhances and utilizes
-        the capabilities of the web.
-      </p>
+      <div class="section__about-content">
+        <p>
+          Software developer with an expertise in the field of web application
+          development. Researches, designs, develops and implements software
+          services and tools that enhances and utilizes the capabilities of the
+          web.
+        </p>
+      </div>
     </section>
     <!-- About section -->
 
-    <section class="main__services" id="services">
+    <section class="main__services section__wrapper" id="services">
       <h2 class="section__title">Services</h2>
       <div class="services__front-end">
         <h3 class="section__sub-title">Front-End</h3>
@@ -133,7 +135,7 @@
     </section>
     <!-- My Services section -->
 
-    <section class="main__projects" id="projects">
+    <section class="main__projects section__wrapper" id="projects">
       <h2 class="section__title">Projects</h2>
       <div class="project__info">
         <div class="project__title">
@@ -209,7 +211,7 @@
     </section>
     <!-- My projects section -->
 
-    <section class="main__posts" id="posts">
+    <section class="main__posts section__wrapper" id="posts">
       <h2 class="section__title">Posts</h2>
       <ul class="posts__list">
         <li class="posts__item">
@@ -223,7 +225,7 @@
   <!-- Main section -->
 
   <footer class="footer">
-    <section class="contact" id="contact">
+    <section class="contact section__wrapper" id="contact">
       <div class="footer__social_media social-media">
         <div class="social-media__icon">
           <a

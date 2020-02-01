@@ -291,6 +291,16 @@ a:focus {
   background-color: var(--clr-light-gray);
 }
 
+.section__wrapper {
+  padding: 1em 2em;
+}
+
+.section__about-content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .main__about {
   color: var(--clr-white);
 }
