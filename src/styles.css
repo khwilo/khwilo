@@ -309,10 +309,32 @@ a:focus {
   padding: 1em;
 }
 
+.main__services__content {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: auto;
+  gap: 2em;
+}
+
+/* Programming languages list */
+.pl-list {
+  color: var(--clr-dark-teal-compliment);
+  font-weight: var(--fw-bold);
+  font-style: italic;
+}
+
+@media (min-width: 30em) {
+  .main__services__content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
 .services__front-end,
 .services__back-end {
   box-shadow: 10px 10px 5px -5px var(--clr-light-gray);
   border: 2px solid var(--clr-light-gray);
+  padding: 1em;
 }
 
 .main__projects {
