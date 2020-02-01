@@ -31,6 +31,12 @@
   --clr-github: #1e1c1c;
   --clr-whatsapp: #00bf1d;
   --clr-twitter: #00a4e3;
+  --clr-html: #f72310;
+  --clr-css: #4a00e6;
+  --clr-js: #ffe500;
+  --clr-angular: #d50028;
+  --clr-nodejs: #4da962;
+  --clr-database: #005d6b;
 }
 
 *,
@@ -253,7 +259,8 @@ a:focus {
   display: flex;
 }
 
-.social-media__icon {
+.social-media__icon,
+.services__tools-icon {
   font-size: var(--fs-heading-3);
 }
 
@@ -335,6 +342,36 @@ a:focus {
   box-shadow: 10px 10px 5px -5px var(--clr-light-gray);
   border: 2px solid var(--clr-light-gray);
   padding: 1em;
+}
+
+.services__tools {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.html-icon {
+  color: var(--clr-html);
+}
+
+.css-icon {
+  color: var(--clr-css);
+}
+
+.js-icon {
+  color: var(--clr-js);
+}
+
+.angular-icon {
+  color: var(--clr-angular);
+}
+
+.nodejs-icon {
+  color: var(--clr-nodejs);
+}
+
+.database-icon {
+  color: var(--clr-database);
 }
 
 .main__projects {

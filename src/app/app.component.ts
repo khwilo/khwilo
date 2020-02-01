@@ -9,10 +9,15 @@ import {
   faGithub,
   faLinkedin,
   faTwitter,
-  faWhatsapp
+  faWhatsapp,
+  faHtml5,
+  faCss3,
+  faJs,
+  faAngular,
+  faNodeJs
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarker, faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -34,9 +39,15 @@ export class AppComponent implements AfterViewInit {
   GitHubIcon = faGithub;
   WhatsappIcon = faWhatsapp;
   TwitterIcon = faTwitter;
+  HTMLIcon = faHtml5;
+  CSS3Icon = faCss3;
+  JSIcon = faJs;
+  AngularIcon = faAngular;
+  NodeJSIcon = faNodeJs;
 
   envelopeIcon = faEnvelope;
   mapMarkerIcon = faMapMarker;
+  databaseIcon = faDatabase;
 
   @ViewChildren('nav_link') navigationLinks: QueryList<ElementRef>;
 
