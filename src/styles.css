@@ -221,11 +221,10 @@ a:focus {
 
 .section__title {
   font-size: var(--fs-heading-2);
-  background-color: var(--clr-default-teal);
+  color: var(--clr-default-teal);
   padding: 0.1em 1em;
   margin: 0.5em auto;
   width: 5em;
-  color: var(--clr-white);
   display: inline-flex;
   justify-content: center;
 }
