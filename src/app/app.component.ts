@@ -1,21 +1,12 @@
 import { Component } from '@angular/core';
 
 import {
-  faAngular,
-  faCss3,
   faGithub,
-  faHtml5,
-  faJs,
   faLinkedin,
-  faNodeJs,
   faTwitter,
   faWhatsapp
 } from '@fortawesome/free-brands-svg-icons';
-import {
-  faDatabase,
-  faExternalLinkAlt,
-  faPen
-} from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faPen } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -34,13 +25,7 @@ export class AppComponent {
   GitHubIcon = faGithub;
   WhatsappIcon = faWhatsapp;
   TwitterIcon = faTwitter;
-  HTMLIcon = faHtml5;
-  CSS3Icon = faCss3;
-  JSIcon = faJs;
-  AngularIcon = faAngular;
-  NodeJSIcon = faNodeJs;
 
-  databaseIcon = faDatabase;
   externalLinkIcon = faExternalLinkAlt;
   penIcon = faPen;
 }
