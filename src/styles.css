@@ -181,6 +181,10 @@ a:focus {
   flex-direction: column;
 }
 
+.section__wrapper {
+  padding: 1em 2em;
+}
+
 /* End - Common styles for intro, about, projects, services and posts sections */
 
 /* Start - Common styles for section title and section sub-title */
@@ -236,24 +240,14 @@ a:focus {
 
 /* End - Social media styles */
 
+/* Start - common styles for both about and projects sections */
+
 .main__about,
 .main__projects {
   background-color: var(--clr-light-gray);
 }
 
-.section__wrapper {
-  padding: 1em 2em;
-}
-
-.section__about-content {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.main__about {
-  color: var(--clr-white);
-}
+/* End - common styles for both about and projects sections */
 
 .main__services {
   padding: 1em;
