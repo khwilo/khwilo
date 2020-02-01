@@ -6,21 +6,22 @@ import {
   ViewChildren
 } from '@angular/core';
 import {
-  faGithub,
-  faLinkedin,
-  faTwitter,
-  faWhatsapp,
-  faHtml5,
-  faCss3,
-  faJs,
   faAngular,
-  faNodeJs
+  faCss3,
+  faGithub,
+  faHtml5,
+  faJs,
+  faLinkedin,
+  faNodeJs,
+  faTwitter,
+  faWhatsapp
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import {
-  faMapMarker,
   faDatabase,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faMapMarker,
+  faPen
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -53,6 +54,7 @@ export class AppComponent implements AfterViewInit {
   mapMarkerIcon = faMapMarker;
   databaseIcon = faDatabase;
   externalLinkIcon = faExternalLinkAlt;
+  penIcon = faPen;
 
   @ViewChildren('nav_link') navigationLinks: QueryList<ElementRef>;
 
