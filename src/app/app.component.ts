@@ -17,7 +17,11 @@ import {
   faNodeJs
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faMapMarker, faDatabase } from '@fortawesome/free-solid-svg-icons';
+import {
+  faMapMarker,
+  faDatabase,
+  faExternalLinkAlt
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -48,6 +52,7 @@ export class AppComponent implements AfterViewInit {
   envelopeIcon = faEnvelope;
   mapMarkerIcon = faMapMarker;
   databaseIcon = faDatabase;
+  externalLinkIcon = faExternalLinkAlt;
 
   @ViewChildren('nav_link') navigationLinks: QueryList<ElementRef>;
 
