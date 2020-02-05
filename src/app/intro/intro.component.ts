@@ -4,7 +4,8 @@ import {
   faGithub,
   faLinkedin,
   faTwitter,
-  faWhatsapp
+  faWhatsapp,
+  faDev
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
@@ -23,6 +24,7 @@ export class IntroComponent implements OnInit {
   LinkedInLink = 'https://www.linkedin.com/in/khwilo-watai';
   TwitterLink = 'https://twitter.com/khwilo';
   WhatsappLink = 'https://api.whatsapp.com/send?phone=+254718802061';
+  DevToLink = 'https://dev.to/khwilo';
 
   envelopeIcon = faEnvelope;
   mapMarkerIcon = faMapMarker;
@@ -31,6 +33,7 @@ export class IntroComponent implements OnInit {
   GitHubIcon = faGithub;
   WhatsappIcon = faWhatsapp;
   TwitterIcon = faTwitter;
+  DevToIcon = faDev;
 
   constructor() {}
 

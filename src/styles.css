@@ -233,6 +233,10 @@ a:focus {
   color: var(--clr-twitter);
 }
 
+.devto-icon {
+  color: var(--clr-dark);
+}
+
 /* End - Social media styles */
 
 /* Start - common styles for both about and projects sections */

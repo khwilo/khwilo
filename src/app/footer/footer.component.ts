@@ -4,7 +4,8 @@ import {
   faGithub,
   faLinkedin,
   faTwitter,
-  faWhatsapp
+  faWhatsapp,
+  faDev
 } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -17,11 +18,13 @@ export class FooterComponent implements OnInit {
   LinkedInLink = 'https://www.linkedin.com/in/khwilo-watai';
   TwitterLink = 'https://twitter.com/khwilo';
   WhatsappLink = 'https://api.whatsapp.com/send?phone=+254718802061';
+  DevToLink = 'https://dev.to/khwilo';
 
   LinkedInIcon = faLinkedin;
   GitHubIcon = faGithub;
   WhatsappIcon = faWhatsapp;
   TwitterIcon = faTwitter;
+  DevToIcon = faDev;
 
   constructor() {}
 

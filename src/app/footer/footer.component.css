@@ -10,6 +10,7 @@
   padding: 1em;
 }
 
-.footer__social_media .github-icon {
+.footer__social_media .github-icon,
+.footer__social_media .devto-icon {
   color: var(--clr-white);
 }
