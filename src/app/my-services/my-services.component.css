@@ -25,7 +25,7 @@
 
 .services__front-end,
 .services__back-end {
-  box-shadow: 10px 10px 5px -5px var(--clr-light-gray);
+  /* box-shadow: 10px 10px 5px -5px var(--clr-light-gray); */ /*  Bug: Displays at the front of div element */
   border: 2px solid var(--clr-light-gray);
   padding: 1em;
 }
