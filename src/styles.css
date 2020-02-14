@@ -128,17 +128,10 @@ a:focus {
 
 .hamburger-menu::before {
   top: 6px;
-  width: 1em;
 }
 
 .hamburger-menu::after {
   bottom: 6px;
-  width: 2.5em;
-}
-
-.nav-open .hamburger-menu,
-.nav-open .hamburger-menu::before {
-  width: 2.5em;
 }
 
 .nav-open .hamburger-menu {
