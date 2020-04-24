@@ -1,0 +1,20 @@
+.update {
+  background-color: crimson;
+  text-align: center;
+  color: wheat;
+  padding: 1em;
+}
+
+.update-link {
+  display: inline-block;
+  padding: 0 0.5em;
+  text-decoration: none;
+  transform: scale(0.9);
+  transition: transform 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+}
+
+.update-link:hover {
+  background-color: wheat;
+  color: black;
+  transform: scale(1.1);
+}
